@@ -13,13 +13,12 @@
 
 ## Sobre o Defensor
 
-O Defensor é um projeto desenvolvido em C# utilizando a engine Unity. 
+O Defensor é um projeto desenvolvido em C# utilizando a engine Unity. <br> 
 No jogo você controla o poderoso Mr. Roboto, que armado com seu canhão de Cromaplasma é a última linha de defesa da humanidade contra a invasão das naves da raça Colorum.
 
 ## Gameplay
-<img src="http://i.imgur.com/ZIRYIHp.png" width="200">
 
-```bash
+
 # Aperte o botão da cor do projétil cromoplasmico desejado
 <img src="http://i.imgur.com/ZIRYIHp.png" width="200">
 
@@ -31,7 +30,7 @@ No jogo você controla o poderoso Mr. Roboto, que armado com seu canhão de Crom
 
 # Salve a humanidade e se torne o robô favorito dos terráqueos
 <img src="http://i.imgur.com/qnd9adI.png" width="200">
-```
+
 
 ## Já implementado
 

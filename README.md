@@ -17,6 +17,7 @@ O Defensor é um projeto desenvolvido em C# utilizando a engine Unity.
 No jogo você controla o poderoso Mr. Roboto, que armado com seu canhão de Cromaplasma é a última linha de defesa da humanidade contra a invasão das naves da raça Colorum.
 
 ## Gameplay
+<img src="http://i.imgur.com/ZIRYIHp.png" width="200">
 
 ```bash
 # Aperte o botão da cor do projétil cromoplasmico desejado
@@ -55,4 +56,4 @@ No jogo você controla o poderoso Mr. Roboto, que armado com seu canhão de Crom
 
 > E-mail para contato: prbizarro@gmail.com &nbsp;&middot;&nbsp;
 > GitHub [@prbizarro](https://github.com/prbizarro) &nbsp;&middot;&nbsp;
-> Twitter [@prbizarro](https://twitter.com/amit_merchant)
+> Twitter [@prbizarro](https://twitter.com/PRBizarro)

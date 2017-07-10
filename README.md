@@ -19,16 +19,16 @@ No jogo você controla o poderoso Mr. Roboto, que armado com seu canhão de Crom
 ## Gameplay
 
 
-# Aperte o botão da cor do projétil cromoplasmico desejado
+### Aperte o botão da cor do projétil cromoplasmico desejado
 <img src="http://i.imgur.com/ZIRYIHp.png" width="200">
 
-# O cromoplasma sairá na direção que o canhão estiver apontando
+### O cromoplasma sairá na direção que o canhão estiver apontando
 <img src="http://i.imgur.com/pbPhNNe.png" width="200">
 
-# Acerte a nave que tenha a mesma cor do cromoplasma e obtenha pontos
+### Acerte a nave que tenha a mesma cor do cromoplasma e obtenha pontos
 <img src="http://i.imgur.com/cdHHSuF.png" width="200">
 
-# Salve a humanidade e se torne o robô favorito dos terráqueos
+### Salve a humanidade e se torne o robô favorito dos terráqueos
 <img src="http://i.imgur.com/qnd9adI.png" width="200">
 
 

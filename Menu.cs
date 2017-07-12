@@ -12,5 +12,13 @@ public class Menu : MonoBehaviour {
 		SceneManager.LoadScene(mainGameName);
 	}
 
+	public void RestartGame()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
 
+	public void ShowControls()
+	{
+		
+	}
 }

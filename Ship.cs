@@ -37,6 +37,12 @@ public class Ship : MonoBehaviour {
 			Destroy(gameObject);
 			main.TakeLife (danotomado);
 		}
+
+		if(col.gameObject.tag == "Direita" || col.gameObject.tag == "Esquerda" || col.gameObject.tag == "Teto")
+		{
+			Destroy(gameObject);
+		}
+
 	}
 
 }

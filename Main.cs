@@ -9,9 +9,13 @@ public class Main : MonoBehaviour {
 	public int score;
 	public int life;
 
+	private GameOver go;
+
 	// Use this for initialization
 	void Start ()
 	 {	
+		Time.timeScale = 1;
+		go = GameObject.FindWithTag("Canvas").GetComponent<GameOver>();
 		life = 3;
 		UpdateLife();
 		score = 0;	
@@ -23,7 +27,7 @@ public class Main : MonoBehaviour {
 	{
 		if (life <= 0)
 		{
-		
+			go.GameIsOver();	
 		}
 	}
 

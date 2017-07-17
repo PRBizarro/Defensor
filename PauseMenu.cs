@@ -5,8 +5,6 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour {
 
 	public GameObject PauseUI;
-	private bool paused = false;
-
 	// Use this for initialization
 	void Start () {		
 		PauseUI.SetActive(false);

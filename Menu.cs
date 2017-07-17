@@ -16,8 +16,10 @@ public class Menu : MonoBehaviour {
 
 	public void RestartGame()
 	{
-		Time.timeScale = 1;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		print("Cena Carregada");
+		Time.timeScale = 1;
+		print("TimeScale inicializado");
 	}
 
 	public void ShowControls()

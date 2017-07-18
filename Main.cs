@@ -6,6 +6,7 @@ public class Main : MonoBehaviour {
 
 	public GUIText scoreText;
 	public GUIText lifeText;
+	public GameObject[] bateriaUI;
 	public int score;
 	public int life;
 
@@ -25,6 +26,16 @@ public class Main : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		if (life == 2)
+		{
+			bateriaUI[0].SetActive(true);
+		}
+
+		if (life == 1)
+		{
+			bateriaUI[1].SetActive(true);	
+		}
+
 		if (life <= 0)
 		{
 			go.GameIsOver();	

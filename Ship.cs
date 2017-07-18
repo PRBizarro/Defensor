@@ -6,10 +6,12 @@ public class Ship : MonoBehaviour {
 
 	public float thrust;
 	private Rigidbody2D ship;
+	public GameObject explosionChao;
 
 	public Main main;
 	public int pontosdados;
 	public int danotomado;
+
 
 	// Use this for initialization
 	void Start () {
@@ -36,6 +38,7 @@ public class Ship : MonoBehaviour {
 		{
 			Destroy(gameObject);
 			main.TakeLife (danotomado);
+			Instantiate(explosionChao, gameObject.transform.position, gameObject.transform.rotation);
 		}
 
 		if(col.gameObject.tag == "Direita" || col.gameObject.tag == "Esquerda" || col.gameObject.tag == "Teto")

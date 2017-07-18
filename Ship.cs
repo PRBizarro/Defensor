@@ -7,6 +7,7 @@ public class Ship : MonoBehaviour {
 	public float thrust;
 	private Rigidbody2D ship;
 	public GameObject explosionChao;
+	public GameObject explosionNave;
 
 	public Main main;
 	public int pontosdados;
@@ -31,6 +32,7 @@ public class Ship : MonoBehaviour {
 		{
 			Destroy(col.gameObject);
 			Destroy(gameObject);
+			Instantiate(explosionNave, gameObject.transform.position, gameObject.transform.rotation);
 			main.AddScore (pontosdados);
 		}
 

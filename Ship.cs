@@ -8,6 +8,7 @@ public class Ship : MonoBehaviour {
 	private Rigidbody2D ship;
 	public GameObject explosionChao;
 	public GameObject explosionNave;
+	
 
 	public Main main;
 	public int pontosdados;
@@ -19,6 +20,7 @@ public class Ship : MonoBehaviour {
 		ship = GetComponent<Rigidbody2D>();
 		GameObject MainObject = GameObject.FindWithTag ("MainCamera");
 		main = MainObject.GetComponent<Main>();
+		
 	}
 	
 	// Update is called once per frame
@@ -33,7 +35,7 @@ public class Ship : MonoBehaviour {
 			Destroy(col.gameObject);
 			Destroy(gameObject);
 			Instantiate(explosionNave, gameObject.transform.position, gameObject.transform.rotation);
-			main.AddScore (pontosdados);
+			main.AddScore (pontosdados);			
 		}
 
 		if(col.gameObject.tag == "CityLife")
@@ -41,6 +43,7 @@ public class Ship : MonoBehaviour {
 			Destroy(gameObject);
 			main.TakeLife (danotomado);
 			Instantiate(explosionChao, gameObject.transform.position, gameObject.transform.rotation);
+			GameObject.FindWithTag("MainCamera").GetComponent<CameraShake>().Shake();		
 		}
 
 		if(col.gameObject.tag == "Direita" || col.gameObject.tag == "Esquerda" || col.gameObject.tag == "Teto")

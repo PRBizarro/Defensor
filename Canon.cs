@@ -8,14 +8,21 @@ public class Canon : MonoBehaviour {
 	public Transform mira;
 	public GameObject[] bullets;
 
+	private string direcao;
+
 	// Use this for initialization
 	void Start () {
-
+		direcao = "direita";
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(Vector3.forward * Time.deltaTime * canonSpeed);
+		if(direcao == "esquerda"){
+			transform.Rotate(Vector3.forward * Time.deltaTime * canonSpeed);
+		}
+		if(direcao == "direita"){
+			transform.Rotate(Vector3.back * Time.deltaTime * canonSpeed);
+		}
 	}
 
 	public void FireRed()
@@ -38,5 +45,16 @@ public class Canon : MonoBehaviour {
 		Instantiate (bullets[2], mira.position, mira.rotation);
 	}
 
+	public void MudarDirecao()
+	{
+		if(direcao == "esquerda")
+		{
+			direcao = "direita";
+		}
+		else
+		{
+			direcao = "esquerda";
+		}
+	}
 
 }

@@ -32,6 +32,7 @@ public class Ship : MonoBehaviour {
 	{
 		if(col.gameObject.tag == "Bullet")
 		{
+			FindObjectOfType<AudioManager>().Play("NaveExplosao");
 			Destroy(col.gameObject);
 			Destroy(gameObject);
 			Instantiate(explosionNave, gameObject.transform.position, gameObject.transform.rotation);
@@ -40,6 +41,7 @@ public class Ship : MonoBehaviour {
 
 		if(col.gameObject.tag == "CityLife")
 		{
+			FindObjectOfType<AudioManager>().Play("CidadeExplosao");
 			Destroy(gameObject);
 			main.TakeLife (danotomado);
 			Instantiate(explosionChao, gameObject.transform.position, gameObject.transform.rotation);

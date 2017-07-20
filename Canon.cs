@@ -27,26 +27,31 @@ public class Canon : MonoBehaviour {
 
 	public void FireRed()
 	{
+		FindObjectOfType<AudioManager>().Play("Shoot");
 		Instantiate (bullets[0], mira.position, mira.rotation);
 	}
 
 	public void FireBlue()
 	{
+		FindObjectOfType<AudioManager>().Play("Shoot");
 		Instantiate (bullets[1], mira.position, mira.rotation);
 	}
 
 	public void Firegreen()
 	{
+		FindObjectOfType<AudioManager>().Play("Shoot");
 		Instantiate (bullets[3], mira.position, mira.rotation);
 	}
 
 	public void FireYellow()
 	{
+		FindObjectOfType<AudioManager>().Play("Shoot");
 		Instantiate (bullets[2], mira.position, mira.rotation);
 	}
 
 	public void MudarDirecao()
 	{
+		FindObjectOfType<AudioManager>().Play("InverteCanon");
 		if(direcao == "esquerda")
 		{
 			direcao = "direita";

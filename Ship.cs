@@ -45,7 +45,10 @@ public class Ship : MonoBehaviour {
 			Destroy(gameObject);
 			main.TakeLife (danotomado);
 			Instantiate(explosionChao, gameObject.transform.position, gameObject.transform.rotation);
-			GameObject.FindWithTag("MainCamera").GetComponent<CameraShake>().Shake();		
+			if(main.life > 0)
+			{
+				GameObject.FindWithTag("MainCamera").GetComponent<CameraShake>().Shake();
+			}	
 		}
 
 		if(col.gameObject.tag == "Direita" || col.gameObject.tag == "Esquerda" || col.gameObject.tag == "Teto")

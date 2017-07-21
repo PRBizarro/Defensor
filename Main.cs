@@ -36,11 +36,16 @@ public class Main : MonoBehaviour {
 			bateriaUI[1].SetActive(true);	
 		}
 
-		if (life <= 0)
+		if (life == 0)
 		{
 			bateriaUI[2].SetActive(true);
+		}
+
+		if (life < 0)
+		{
 			go.GameIsOver();	
 		}
+
 	}
 
 	void UpdateScore()

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour {
 
 	public GameObject ControlsUI;
+	public GameObject MenuUI;
 	
 	public string mainGameName;
 
@@ -24,13 +25,13 @@ public class Menu : MonoBehaviour {
 
 	public void ShowControls()
 	{
-			
 		ControlsUI.SetActive(true);
+		MenuUI.SetActive(false);
 	}
 
 	public void ExitControls()
 	{
-			
+		MenuUI.SetActive(true);
 		ControlsUI.SetActive(false);
 	}
 

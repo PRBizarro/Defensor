@@ -9,6 +9,7 @@ public class GameOverScores : MonoBehaviour {
 	public Main main;
 	public GUIText scoreText;
 	public GUIText bestscoreText;
+	public GameObject newBestScore;
 
 	void Start()
 	{
@@ -23,6 +24,7 @@ public class GameOverScores : MonoBehaviour {
 		{
 			PlayerPrefs.SetInt("BestScore", score);
 			bestscoreText.text = score.ToString();
+			newBestScore.SetActive(true);
 		}
 	}
 

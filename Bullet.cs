@@ -9,7 +9,6 @@ public class Bullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		FindObjectOfType<AudioManager>().Play("Shoot");
 		bullet = GetComponent<Rigidbody2D>();
 	}
 	

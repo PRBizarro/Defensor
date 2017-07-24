@@ -46,7 +46,7 @@ public class Ship : MonoBehaviour {
 			Destroy(gameObject);
 			main.TakeLife (danotomado);
 			Instantiate(explosionChao, gameObject.transform.position, gameObject.transform.rotation);
-			if(main.life > 0)
+			if(main.life > -1)
 			{
 				GameObject.FindWithTag("MainCamera").GetComponent<CameraShake>().Shake();
 			}	
@@ -60,47 +60,9 @@ public class Ship : MonoBehaviour {
 
 		//Limpar a cagada que é essa função, implementada só para testes
 		public void IncVel()
-		{
-			if (main.score > 50)
-			{
-				velocity = velocity + 0.1f;
-			}	
-			if (main.score > 100)
-			{
-				velocity = velocity + 0.1f;
-			}	
-			if (main.score > 150)
-			{
-				velocity = velocity + 0.1f;
-			}	
-			if (main.score > 200)
-			{
-				velocity = velocity + 0.1f;
-			}
-			if (main.score > 250)
-			{
-				velocity = velocity + 0.1f;
-			}	
-			if (main.score > 300)
-			{
-				velocity = velocity + 0.1f;
-			}
-			if (main.score > 350)
-			{
-				velocity = velocity + 0.1f;
-			}	
-			if (main.score > 400)
-			{
-				velocity = velocity + 0.1f;
-			}	
-			if (main.score > 450)
-			{
-				velocity = velocity + 0.1f;
-			}	
-			if (main.score > 500)
-			{
-				velocity = velocity + 0.1f;
-			}
+		{	
+			velocity = velocity + main.score/1000f;
+			print("Velocidade:" + velocity );
 		}
 
 }

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Main : MonoBehaviour {
 
+	public GameObject Spawn4;
+	public GameObject Spawn3;
+
+	public GameObject Spawn2;
 	public GUIText scoreText;
 	public GUIText lifeText;
 	public GameObject[] bateriaUI;
@@ -26,6 +30,22 @@ public class Main : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+
+		if(score > 1000)
+		{
+			Spawn4.SetActive(true);
+		}
+
+		if(score > 500)
+		{
+			Spawn3.SetActive(true);
+		}
+
+		if(score > 100)
+		{
+			Spawn2.SetActive(true);
+		}
+
 		if (life == 2)
 		{
 			bateriaUI[0].SetActive(true);
@@ -69,4 +89,5 @@ public class Main : MonoBehaviour {
 		life -= newLifeValue;
 		UpdateLife();
 	}
+
 }

@@ -7,8 +7,14 @@ public class Menu : MonoBehaviour {
 
 	public GameObject ControlsUI;
 	public GameObject MenuUI;
+	public GameObject StLgo;
 	
 	public string mainGameName;
+
+	public void Start()
+	{
+
+	}
 
 	public void StartGame()
 	{
@@ -35,5 +41,10 @@ public class Menu : MonoBehaviour {
 		ControlsUI.SetActive(false);
 	}
 
-
+	IEnumerator StudioLogo()
+	{
+		StLgo.SetActive(true);
+		yield return new WaitForSeconds(5);
+		StLgo.SetActive(false);
+	}
 }

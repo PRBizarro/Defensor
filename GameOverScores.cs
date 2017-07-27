@@ -25,6 +25,7 @@ public class GameOverScores : MonoBehaviour {
 			PlayerPrefs.SetInt("BestScore", score);
 			bestscoreText.text = score.ToString();
 			newBestScore.SetActive(true);
+			PlayGamesScript.AddScoreToLeaderboard(DefensorResources.leaderboard_lista_dos_maiores_defensores_da_terra, score); // adiciona o maior ao google board
 		}
 	}
 

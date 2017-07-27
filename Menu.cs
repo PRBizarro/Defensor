@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//using GooglePlayGames;  // Biblioteca de conexao com o google play
+//using UnityEngine.SocialPlatforms; // Biblioteca Unity Social Google Play
 
 public class Menu : MonoBehaviour {
 
 	public GameObject ControlsUI;
 	public GameObject MenuUI;
 	public GameObject StLgo;
+	//public bool IsConnectedToGoogleServices = false;
 	
 	public string mainGameName;
 
 	public void Start()
 	{
-
+		//PlayGamesPlatform.Activate(); // Ativando a plataforma do google play
 	}
+
 
 	public void StartGame()
 	{
@@ -33,6 +37,7 @@ public class Menu : MonoBehaviour {
 	{
 		ControlsUI.SetActive(true);
 		MenuUI.SetActive(false);
+		//PlayGamesPlatform.Activate();        // teste
 	}
 
 	public void ExitControls()
@@ -41,10 +46,38 @@ public class Menu : MonoBehaviour {
 		ControlsUI.SetActive(false);
 	}
 
-	IEnumerator StudioLogo()
+	public void ShowAchievements()
 	{
-		StLgo.SetActive(true);
-		yield return new WaitForSeconds(5);
-		StLgo.SetActive(false);
+		PlayGamesScript.ShowAchievementsUI();
 	}
+
+	public void ShowLeaderboards()
+	{
+		PlayGamesScript.ShowLeaderboardsUI();
+	}
+	/*public bool ConnectToGoogleServices()
+	{
+			if(!IsConnectedToGoogleServices)
+			{
+				Social.localUser.Authenticate((bool success) => { IsConnectedToGoogleServices = success; });
+			}
+			return IsConnectedToGoogleServices;
+	}
+
+	public void ToAchievement()
+	{
+		if (Social.localUser.authenticated)
+		{
+			Social.ShowAchievementsUI();
+		}
+	}
+
+	public void ToLeaderboard()
+	{
+		if(Social.localUser.authenticated)
+		{
+			Social.ShowLeaderboardUI ();
+		}
+	}*/
+
 }

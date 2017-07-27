@@ -7,7 +7,7 @@ public class CameraShake : MonoBehaviour {
 	[SerializeField] bool shakeMe = false;
 	[SerializeField]float shakeDur = .5f;
 	[SerializeField]float shakeOffset = 10f;
-	[SerializeField]float shakeFreq = .1f;
+
 	Transform t;
 	Vector2 originalPos;
 	float shakeTimer;

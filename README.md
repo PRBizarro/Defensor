@@ -11,6 +11,13 @@
 
 <br>
 
+## O Defensor está em open beta!
+
+Acesse pelo link e baixe o app no seu Smartphone.<br>
+Divirta-se e reporte qualquer bug ou comprotamento estranho que encontrar :) <br>
+
+<a href ="https://play.google.com/apps/testing/com.BizarooStudios.ODefensor2" target="_blank"> LINK AQUI </a>
+
 ## Sobre o Defensor
 
 O Defensor é um projeto desenvolvido em C# utilizando a engine Unity. <br><br> 

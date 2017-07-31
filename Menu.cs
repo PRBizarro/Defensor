@@ -16,7 +16,7 @@ public class Menu : MonoBehaviour {
 
 	public void Start()
 	{
-		//PlayGamesPlatform.Activate(); // Ativando a plataforma do google play
+		Time.timeScale = 1;
 	}
 
 

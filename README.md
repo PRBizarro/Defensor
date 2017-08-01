@@ -11,12 +11,13 @@
 
 <br>
 
-## O Defensor está em open beta!
+## O Defensor foi lançado!
 
-Acesse pelo link e baixe o app no seu Smartphone.<br>
+Acesse pelo link e baixe o game no seu Smartphone.<br>
 Divirta-se e reporte qualquer bug ou comportamento estranho que encontrar :) <br>
+Lembre-se de ativar seu ranking como público no Google Play Jogos para participar do Ranking Online do O Defensor!<br>
 
-<a href ="https://play.google.com/apps/testing/com.BizarooStudios.ODefensor2" target="_blank"> LINK AQUI </a>
+<a href ="https://play.google.com/store/apps/details?id=com.BizarooStudios.ODefensor2" target="_blank"> LINK AQUI </a>
 
 ## Sobre o Defensor
 
@@ -48,21 +49,6 @@ Salve-nos Defensor!<br>
 
 - Placar de pontuação online no Google Play jogos
 <img src="http://i.imgur.com/B9WQRpk.jpg" width="200">
-
-## Já implementado na versão atual [0.9]
-
-- Core gameplay 
-- Score
-- Vidas
-- Menus (Tela inicial, Pause, Try Again)
-- Ranking online de melhores pontuações
-- Conquistas
-- Animações 
-- Review do código
-
-## Implementações on the works [1.0]
-
-- Patches de acordo com o feedback dos jogadores;
 
 ## Observações e créditos
 

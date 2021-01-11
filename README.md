@@ -62,4 +62,4 @@ Salve-nos Defensor!<br>
 
 > E-mail para contato: prbizarro@gmail.com &nbsp;&middot;&nbsp;
 > GitHub [@prbizarro](https://github.com/prbizarro) &nbsp;&middot;&nbsp;
-> Twitter [@prbizarro](https://twitter.com/PRBizarro)
+> Linkedin [Pablo Bizarro](https://www.linkedin.com/in/pablo-bizarro/)
